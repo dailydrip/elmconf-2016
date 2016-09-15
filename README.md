@@ -114,3 +114,90 @@ elm-format rocks!
 #### True Story #2
 
 > Everything is **not** a component.
+
+#### Context-Pattern
+
+Have a context you want to use for different modules.  Gives you a simple way to
+communicate things down from ancestors in your hierarchy.
+
+```elm
+type alias Context =
+    { hostname : String
+    , user : User
+    -- ...
+    }
+```
+
+```elm
+-- Page.elm
+init : Context -> (Model, Cmd Msg)
+```
+
+#### True Story #3
+
+> Real data can break your app.
+
+In the Ferrari application, when first trying it out with real world data, the
+app wouldn't start at all.  Errors in the console even though the code was
+compiling perfectly.  Dumbfounded: "how can the data itself break our
+application?"
+
+Ultimately had something to do with integers.  Database IDs were more than what
+a 32-bit integer can hold!  Circumvented the problem by using a Float type for
+it.
+
+#### Authentication
+
+Externalize it if possible.
+
+Your goals:
+
+- anonymous use
+- same app logged in/out?
+- routes differe?
+
+#### Protip #2
+
+```elm
+type RemoteData e a
+    = NotAskes
+    | Loading
+    | Success a
+    | Failure e
+```
+
+#### Login
+
+```elm
+type ToplevelRouter (Maybe Context) (Maybe AppRouter)
+-- AppRouter is the routes for the logged in application
+```
+
+- When page is loaded, status check to the backend.
+- Backend responds either with the logged in user data or 'no logged in user with this session id'.
+- If the user exists, initialize the context (which has the user as a plain value).
+- Then initialize the `AppRouter` with an actual context value.
+  - `AppRouter` never has to deal with `Maybe` - always have a context, always
+    have a user.
+
+#### Protip extravaganza!
+
+```elm
+case Debug.log "sweet" pin of
+    Luke ->
+        -- ...
+```
+
+```elm
+task
+    |> Task.map (log "great success")
+    |> Task.mapError (log "here's where it fails")
+```
+
+```elm
+    thing
+        |> squeeze
+        |> log "squeezed"
+        |> tweeze
+        |> log "tweezed"
+```
