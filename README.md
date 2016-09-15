@@ -239,3 +239,31 @@ the code.  Found end-to-end testing was really what they wanted.
 ##### Protip #n
 
 > Ports are your friends!
+
+If you're on a schedule, think about...when you're facing a difficult problem in
+Elm, and you know that it's easy to work around that using JavaScript, then just
+go for it.
+
+##### Personal Learnings
+
+- Reuse
+  - everything is not a component.
+  - sometimes the tool that you need is maybe just to refactor the `let` block
+    into separate functions, or refactor the nested `view` functions into more
+    detailed helper functions that you can use from elsewhere.
+  - functions are nice
+  - state management is not nice
+- ROI
+  - "How am I going to make it work now?"
+    - Very likely in an agile project that it's going to change anyway.
+    - Makes sense to not go for the most elegant solution every time, esp. if
+      it's going to take a lot of time.
+- Structuring
+  - Slap everything in the same directory and be done with it until it gets too
+    much.  Then refactor to what that current project seems to need.
+- Solve the problem **at hand**
+  - This is the whole key thing he wanted to stress here.  "I don't want to
+    componentize things anymore, I don't want to generalize beforehand.  I just
+    want to solve the current problem."
+  - That will make it possible for me to move on, and in retrospect I can see
+    the whole thing much clearer.
