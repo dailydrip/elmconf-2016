@@ -16,6 +16,7 @@ Request!  I'd love to gather all of the slides here at a minimum.
 - [Compilers as Therapists, or Why Elm is Good for ADHD - Luke Westby](#compilers-as-therapists---luke-westby)
 - [Lightning Talks](#lightning-talks)
 - [Building an Interactive Storytelling Framework in Elm - Jeff Schomay](#tktktk)
+- [The Clockwork Gardener: Growing an Elm App With Templates - Jessica Kerr](#tktktk)
 
 ### Code is the Easy Part - Evan Czaplicki
 
@@ -74,6 +75,7 @@ improvement but maybe hasn't been done in programming languages before.
 ### Beyond Hello World and Todo Lists - Ossi Hanhinen
 
 - [@ohanhi](http://twitter.com/ohanhi)
+- [Here are some notes from Jessica Kerr that I found on Twitter.](https://www.dropbox.com/s/2wesfpakeanhh5z/Ossi%20Hanhinan.pdf?dl=0)
 
 - Overview
 - Lessons learned
@@ -478,3 +480,21 @@ story element types.
 [jschomay/elm-narrative-engine](http://package.elm-lang.org/packages/jschomay/elm-narrative-engine/latest)
 [jschomay/elm-interactive-story-starter](http://github.com/jschomay/elm-interactive-story-starter)
 [@jschomay](http://twitter.com/jschomay)
+
+### The Clockwork Gardener: Growing an Elm App With Templates - Jessica Kerr
+
+[Description from elm conf site](https://github.com/elm-conf-us/2016.elm-conf.us/blob/master/content/speaker/jessica-kerr.md)
+
+(NOTE: I didn't get enough of this taken down as notes because it was kind of
+awesome and I was busy watching sorry!)
+
+Elm is awesome to read but sometimes it's a pain to write because of all the
+boilerplate to wire things in.
+
+We can fix this!  Templates!
+
+Atomist has a tool for this.  (she then just sent a slackbot a command and got a
+github repo out of it with a small Elm app in it)
+
+Adding a text field is annoying - like 5 steps!  She used atomist to have it
+modify her code with Pull Requests.
