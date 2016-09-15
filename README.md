@@ -17,6 +17,7 @@ Request!  I'd love to gather all of the slides here at a minimum.
 - [Lightning Talks](#lightning-talks)
 - [Building an Interactive Storytelling Framework in Elm - Jeff Schomay](#tktktk)
 - [The Clockwork Gardener: Growing an Elm App With Templates - Jessica Kerr](#tktktk)
+- [Making Impossible States Impossible - Richard Feldman](#tktktk)
 
 ### Code is the Easy Part - Evan Czaplicki
 
@@ -498,3 +499,74 @@ github repo out of it with a small Elm app in it)
 
 Adding a text field is annoying - like 5 steps!  She used atomist to have it
 modify her code with Pull Requests.
+
+### Making Impossible States Impossible - Richard Feldman
+
+elm-css - turns out you could build invalid stylesheets.  We'd rather not have
+this.
+
+(at-rules - charset must be first, imports have to come before namespaces,
+namespaces have to come before declarations)
+
+- First thought - validate and sort, done.
+- Talked with Evan, he said "yeah what if you made it so people couldn't
+  generate invalid stylesheets?"
+
+> Testing is good.  Impossible is better.
+
+> A clearer data model can lead to a clearer API.
+
+- Tracked these different types of things differently in a record.
+
+OK, so what if we aren't doing elm-css stuff?
+
+> Can we just make impossible model states impossible to represent?
+
+#### Survey App
+
+Prompts and responses.
+
+History / Navigation.
+
+Talked about how you might want to move through your questions list, various
+ways that you could represent this and landed on something like:
+
+```elm
+type alias History =
+    { previous : List Question
+    , current : Question
+    , next : List Question
+    }
+```
+
+This is a ZipList so you can't have an empty list of questions and you can't
+have the current question fail to be one of the questions in this list (since
+it's part of the list).
+
+> Can we make it so that depending on certain implementation details is
+> impossible?
+
+Yes!  **single-constructor union type**
+
+```elm
+type History =
+    History
+        { previous : List Question
+        , current : Question
+        , next : List Question
+        }
+```
+
+Noted that you could pattern match on the value in the function arguments since
+it just has a single constructor.
+
+Now let's add a "Status Bar" to show action results and whatnot.  i.e. "Question
+Created", "Question Deleted". (oh yeah and maybe we want to undo when question
+deleted)
+
+```elm
+type Status
+    = NoStatus
+    | TextStatus String
+    | DeletedStatus String Question
+```
