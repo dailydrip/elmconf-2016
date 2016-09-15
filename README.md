@@ -13,6 +13,13 @@ Request!  I'd love to gather all of the slides here at a minimum.
 
 ### Code is the Easy Part - Evan Czaplicki
 
+#### Quotes
+
+RE: his projects' tendency to gather a ton of issues before any work is batched:
+
+> At this point people are crying in the streets, they've been displaced by
+> floods...locusts...
+
 #### Slides:
 
 - ?
