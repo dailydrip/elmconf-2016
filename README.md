@@ -13,6 +13,8 @@ Request!  I'd love to gather all of the slides here at a minimum.
 
 ### Code is the Easy Part - Evan Czaplicki
 
+> Just do a good job. -- Guido van Rossum
+
 #### Random notable bits
 
 ##### Batching Work
@@ -35,6 +37,27 @@ Showed off a pretty awesome implementation of elm-reactor / debug mode.  Really
 exciting stuff - all history of `Msg`s, see the whole model with expandos.
 
 ZOMG export the `Msg` history, move to different browser, import it there!
+
+#### What is next for Elm?
+
+- Work on code swapping
+- Server-side rendering
+- Improve Packaging
+- ???
+  - Platforms?
+    - Server
+    - Mobile
+    - WebAssembly
+  - Tools?
+    - Type Suggestions
+    - REPL
+  - Misc?
+    - Single-Page Apps Documentation
+    - HTTP in core
+    - Timely Fixes
+
+One of the points is, what's a way we can work on something that's not just an
+improvement but maybe hasn't been done in programming languages before.
 
 #### Slides:
 
