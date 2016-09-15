@@ -34,6 +34,8 @@ the easy part!
 Showed off a pretty awesome implementation of elm-reactor / debug mode.  Really
 exciting stuff - all history of `Msg`s, see the whole model with expandos.
 
+ZOMG export the `Msg` history, move to different browser, import it there!
+
 #### Slides:
 
 - ?
