@@ -201,3 +201,41 @@ task
         |> tweeze
         |> log "tweezed"
 ```
+
+#### Project Structure
+
+##### Ferrari
+
+- elm 0.15, no StartApp
+- initally had `Model/Article.elm`, `Update/Article.elm`, `View/Article.elm`.
+  Eventually moved each model and update into the same file for each type, keep
+  view dir.
+- The initial move made it impossible to work because all the files were called
+  `Article.elm` !!!
+
+##### True Story #4
+
+In the beginning of the project, they wrote unit tests for every function.
+Found it wasn't that useful because the majority of functions were just
+returning HTML and the unit tests were not terribly useful/helpful.  Toned down
+a lot of what they unit tested, focused on the more difficult logical parts of
+the code.  Found end-to-end testing was really what they wanted.
+
+> Tests: ROI
+
+##### d25
+
+- elm 0.16, with StartApp
+- Initially just put all the files in one folder.
+  - Worked for quite a while, til around 20 modules or so it started to get
+    harder to find what you were looking for.
+- Later, broke up top level dirs:
+  - Routers
+  - Types
+  - Pages
+  - Helpers
+  - Components
+
+##### Protip #n
+
+> Ports are your friends!
