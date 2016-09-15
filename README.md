@@ -13,12 +13,26 @@ Request!  I'd love to gather all of the slides here at a minimum.
 
 ### Code is the Easy Part - Evan Czaplicki
 
-#### Quotes
+#### Random notable bits
+
+##### Batching Work
 
 RE: his projects' tendency to gather a ton of issues before any work is batched:
 
 > At this point people are crying in the streets, they've been displaced by
 > floods...locusts...
+
+##### Collaboration
+
+Talked about elm-format, elm-webgl, elm-css, elm-reactor and how people just
+build things because they need them :)  Talked about just getting into the
+elm-dev, introducing yourself, talking, getting feedback.  The point is: Code is
+the easy part!
+
+#### Elm Reactor
+
+Showed off a pretty awesome implementation of elm-reactor / debug mode.  Really
+exciting stuff - all history of `Msg`s, see the whole model with expandos.
 
 #### Slides:
 
