@@ -79,8 +79,8 @@ improvement but maybe hasn't been done in programming languages before.
 
 #### True Story #1
 
-Generalization: wait for features to stabilize.  Did it too early, had to redo
-it multiple times - just be lazy and duplicate initially!
+> Generalization: wait for features to stabilize.  Did it too early, had to redo
+> it multiple times - just be lazy and duplicate initially!
 
 #### Words
 
@@ -95,3 +95,22 @@ it multiple times - just be lazy and duplicate initially!
 #### Protip #1
 
 elm-format rocks!
+
+#### Projects
+
+(codenames)
+
+- Ferrari
+  - Developed during 2015, thing he wrote "how elm made our work better" about.
+  - Tool for newspaper editors to set how the news shows up on the site.  Choose
+    articles and article blocks, drag and droppy thing to layout the news site.
+  - Started with 0.15
+  - probably up to 0.17 now?
+  - SSO that only worked on the customer premises
+- D25
+  - Simple social media thing of sorts.
+  - Using sporto/hop for routing and navigation, works really nicely for them.
+
+#### True Story #2
+
+> Everything is **not** a component.
