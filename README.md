@@ -11,6 +11,9 @@ Request!  I'd love to gather all of the slides here at a minimum.
 
 ## Talks
 
+- [Code is the Easy Part - Evan Czaplicki](#code-is-the-easy-part---evan-czaplicki)
+- [Beyond Hello World and Todo Lists - Ossi Hanhinen](#beyond-hello-world-and-todo-lists---ossi-hanhinen)
+
 ### Code is the Easy Part - Evan Czaplicki
 
 > Just do a good job. -- Guido van Rossum
@@ -62,3 +65,19 @@ improvement but maybe hasn't been done in programming languages before.
 #### Slides:
 
 - ?
+
+### Beyond Hello World and Todo Lists - Ossi Hanhinen
+
+- Overview
+- Lessons learned
+  - Project structure
+  - Refactoring
+  - Message passing
+  - Code reuse
+- Protips (TM)
+- War^H^H^HTrue Stories
+
+#### True Story #1
+
+Generalization: wait for features to stabilize.  Did it too early, had to redo
+it multiple times - just be lazy and duplicate initially!
