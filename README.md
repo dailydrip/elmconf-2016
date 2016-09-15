@@ -357,3 +357,69 @@ to go start his own company.
 
 If we target a11y specifically, we'll find that the experience is just nicer for
 everyone.
+
+### Lightning Talks
+
+#### elm-style-animation
+
+[Description from elm-conf site](https://github.com/elm-conf-us/2016.elm-conf.us/blob/master/content/speaker/matthew-griffith.md)
+
+Matthew Griffith showing off the new API for [elm-style-animation](https://github.com/mdgriffith/ui-animation).
+
+- [Talk slides](https://github.com/mdgriffith/elm-animation-talk) - here's the
+  repo for his slides :)
+
+#### Functional Data Structures = Tessa Kelly
+
+- [Slides](http://slides.com/tessak/functional-data-structures-3)
+  - OK these are pretty cool, live slides you can follow along with from
+    slides.com :)
+- This was a really cool comparison of a few different ways to build a Binary
+  Tree API:
+  - Array Based
+    - Use Array as our base
+    - Derive child indices
+    - Hope for a complete binary tree
+  - Dict Based
+    - Use Dict as our base
+    - Derive child indices
+    - Continue using helpers to our advantage
+    - (kinda cheating since Dicts are...trees)
+  - Tree Based, #1
+    - Use "pointers"
+    - Pretend records have antirely analogous uses to JavaScript Objects
+    - Hope that the types stay nice
+  - Tree Based, #2
+    - Create types to describe the shape of a node
+    - Use casing to our advantage
+
+#### I love Elm - Abadi Kurniawan
+
+[Description from elm conf site](https://github.com/elm-conf-us/2016.elm-conf.us/blob/master/content/speaker/abadi-kurniawan.md)
+
+[elm-horizon library](http://github.com/abadi199/elm-horizon)
+
+@engage software
+@abadikurniawan
+
+I'm happy when I write Elm.  I'm sad when I write other things.
+
+- Evan clarified we probably won't have elm on the server any time soon.
+- What if we just ditched the backend altogether?
+- What if I just used Horizon as the backend?  Then I can be happy all the time.
+  I write Elm all the time.
+
+##### Why Horizon?
+
+> [Horizon](http://horizon.io/) is a realtime, open source backend for JavaScript Apps.
+
+APIs:
+
+- Authentication
+- Collection
+- other things?
+
+##### Collection API
+
+List of documents, backed by a table, provides a way to work on that collection.
+He grouped this API into `[Write, Read, Modifiers]` sections.
