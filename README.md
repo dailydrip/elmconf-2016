@@ -15,6 +15,7 @@ Request!  I'd love to gather all of the slides here at a minimum.
 - [Beyond Hello World and Todo Lists - Ossi Hanhinen](#beyond-hello-world-and-todo-lists---ossi-hanhinen)
 - [Compilers as Therapists, or Why Elm is Good for ADHD - Luke Westby](#compilers-as-therapists---luke-westby)
 - [Lightning Talks](#lightning-talks)
+- [Building an Interactive Storytelling Framework in Elm - Jeff Schomay](#tktktk)
 
 ### Code is the Easy Part - Evan Czaplicki
 
@@ -424,3 +425,56 @@ APIs:
 
 List of documents, backed by a table, provides a way to work on that collection.
 He grouped this API into `[Write, Read, Modifiers]` sections.
+
+### Building an Interactive Storytelling Framework in Elm - Jeff Schomay
+
+[Description from elm conf site](https://github.com/elm-conf-us/2016.elm-conf.us/blob/master/content/speaker/jeff-schomay.md)
+
+- Built an interactive storytelling tool so he could tell his stories.
+- Wanted to avoid the mechanics of spatial navigation or clunky mechanics that
+  don't work well for a text-based story.  Wanted it to be simple to build.
+
+> How can I make it as *simple* as possible to tell stories that are as
+> *engaging* as possible?
+
+- Just want the client to say "here's the story world, here's how it works" and
+  have his project just take it from there.
+- Wants to be an html platform, show on mobile, so that works.
+- Types and functional nature of elm should make it nice for him to write the
+  framework.
+- Let the author focus on the story and not the code.
+  - We're going to need a good API
+- Sharing the evolution of the API
+
+#### The evolution
+
+##### Take 1 - The state machine approach
+
+Transitions that help the story progress.
+
+##### Take 2 - Declarative rule sets
+
+- Just data.  Nice!
+- Fairly simple to handle
+- But I can't ensure that you've written a rule for every case :( :(
+- Story rules are very dense, type-heavy, lots of constructors
+
+##### Take 3 - Adding functions to make a DSL
+
+Just using functions as glues to put together these type constructors.
+
+Ended up accidentally just defining `curry`, `<|` which was nice.
+
+##### Final design
+
+Really nice to write, but had some bad things.  Like you could put a character
+in your inventory :( :(
+
+> Make it impossible to do bad stuff.
+
+But doing this led to a less pleasant API, had to do more stuff to add types new
+story element types.
+
+[jschomay/elm-narrative-engine](http://package.elm-lang.org/packages/jschomay/elm-narrative-engine/latest)
+[jschomay/elm-interactive-story-starter](http://github.com/jschomay/elm-interactive-story-starter)
+[@jschomay](http://twitter.com/jschomay)
