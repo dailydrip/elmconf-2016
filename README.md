@@ -13,7 +13,8 @@ Request!  I'd love to gather all of the slides here at a minimum.
 
 - [Code is the Easy Part - Evan Czaplicki](#code-is-the-easy-part---evan-czaplicki)
 - [Beyond Hello World and Todo Lists - Ossi Hanhinen](#beyond-hello-world-and-todo-lists---ossi-hanhinen)
-- [Compilers as Therapists, or Why Elm is Good for ADHD - Luke Westby](#tktktktk)
+- [Compilers as Therapists, or Why Elm is Good for ADHD - Luke Westby](#compilers-as-therapists---luke-westby)
+- [Lightning Talks](#lightning-talks)
 
 ### Code is the Easy Part - Evan Czaplicki
 
