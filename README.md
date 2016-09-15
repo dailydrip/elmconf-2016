@@ -81,3 +81,17 @@ improvement but maybe hasn't been done in programming languages before.
 
 Generalization: wait for features to stabilize.  Did it too early, had to redo
 it multiple times - just be lazy and duplicate initially!
+
+#### Words
+
+- triplet
+  - `(init, update, view)`
+  - init returns `(Model, Cmd Msg)`
+  - update -> `(Model, Cmd Msg)`
+  - view - `Html Msg`
+- helper function, returns whatever type
+- "Routing" "pages" in SPA with URLs
+
+#### Protip #1
+
+elm-format rocks!
