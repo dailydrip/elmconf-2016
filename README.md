@@ -13,8 +13,11 @@ Request!  I'd love to gather all of the slides here at a minimum.
 
 - [Code is the Easy Part - Evan Czaplicki](#code-is-the-easy-part---evan-czaplicki)
 - [Beyond Hello World and Todo Lists - Ossi Hanhinen](#beyond-hello-world-and-todo-lists---ossi-hanhinen)
+- [Compilers as Therapists, or Why Elm is Good for ADHD - Luke Westby](#tktktktk)
 
 ### Code is the Easy Part - Evan Czaplicki
+
+- [@czaplic](http://twitter.com/czaplic)
 
 > Just do a good job. -- Guido van Rossum
 
@@ -67,6 +70,8 @@ improvement but maybe hasn't been done in programming languages before.
 - ?
 
 ### Beyond Hello World and Todo Lists - Ossi Hanhinen
+
+- [@ohanhi](http://twitter.com/ohanhi)
 
 - Overview
 - Lessons learned
@@ -267,3 +272,88 @@ go for it.
     want to solve the current problem."
   - That will make it possible for me to move on, and in retrospect I can see
     the whole thing much clearer.
+
+### Compilers as Therapists - Luke Westby
+
+- [@luke\_dot\_js](http://twitter.com/luke_dot_js)
+
+#### 4 Things
+
+- A disclaimer
+- An analogy
+- A story
+- A call to action
+
+#### Disclaimer
+
+> I am not a psychologist.
+
+This talk is 100% personal.
+
+#### Analogy
+
+Poor eyesight and ADHD.
+
+##### Poor Vision
+
+Symptoms:
+
+- Eye strain
+- Fatigue or headache after you do a close-up task such as reading
+- Trouble focusing on nearby objects
+- Blurred vision
+
+When you have poor vision, you miss out on details of the physical world.
+
+##### ADHD
+
+Symptoms:
+
+- Mental strain
+- Fatigue or headache after you do a concentration-intensive task such as
+  reading
+- Trouble focusing on current activity
+- Blurred mental perception
+
+> Imagine what it would be like to have blurry vision, but then abstract it and
+> apply it to your mind - that's how I experience the world.
+
+You miss out on details of the mental and emotional world.
+
+
+##### Solutions
+
+To help with poor eyesight, we use a lense to focus light.
+
+To help with ADHD, we can use tools to focus our thoughts.
+
+#### STORY TIME
+
+Wanted to build this cool project, made a bunch of technical decisions up front,
+got distracted by them, built some GraphQL stuff, Falcor stuff, open sourced
+some things, found all kinds of weirdo issues, found a bug in electron and sent
+a PR, etc. etc....but didn't build the project!
+
+Around the same time...
+
+#### THEN I DISCOVERED ELM
+
+You don't have to decide all the things that people talk about with "javascript
+fatigue", you just get started and do stuff.  The only thing you have to do with
+Elm is build the thing, and the only problem you have to solve is the one you're
+interested in.
+
+> Elm has been a tool that changes the way that I think about UI, so that I can
+> think about the thing I intend to do.
+
+Built a bunch of open source libraries, 2 running apps he uses every day or
+sometimes, gets to talk to people on stage, and from that confidence he was able
+to go start his own company.
+
+##### CALL TO ACTION
+
+- For those with similar stories: Share them if you can.
+- For those who build things: Listen to those stories.
+
+If we target a11y specifically, we'll find that the experience is just nicer for
+everyone.
