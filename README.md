@@ -3,6 +3,9 @@
 An overview of what happened during ElmConf 2016.  Feel free to submit a Pull
 Request!  I'd love to gather all of the slides here at a minimum.
 
+_Also, [Jessica Kerr took some sweet
+notes](https://www.dropbox.com/sh/te0s1mysmo248ir/AAA-Fv4DAsd1oDbNW9GKexrUa?dl=0)._
+
 ## Photos and Tweets
 
 - Tweets should be under [the #elmconf hashtag](https://twitter.com/hashtag/elmconf?src=hash).
