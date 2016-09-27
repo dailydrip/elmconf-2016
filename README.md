@@ -8,9 +8,9 @@ notes](https://www.dropbox.com/sh/te0s1mysmo248ir/AAA-Fv4DAsd1oDbNW9GKexrUa?dl=0
 
 ## Photos and Tweets
 
+- [Photo gallery](https://echobind.com/gallery/elm-conf-2016/)
 - Tweets should be under [the #elmconf hashtag](https://twitter.com/hashtag/elmconf?src=hash).
 - Here are [just the tweet photos](https://twitter.com/hashtag/elmconf?f=images&vertical=default&src=hash).
-- Is there a photo gallery being gathered somewhere?
 
 ## Talks
 
